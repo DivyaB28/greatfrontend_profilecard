@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GreatFrontEnd Projects | Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+  </head>
+  <body>
+    <h1 class="screenread-only">Profile Card</h1>
+    <main>
+      <div class="profile">
+        <div class="profile__image">
+          <img
+            alt="user profile picture"
+            src="./img/profile_avif.avif"
+            width="64px"
+            height="64px"
+          />
+        </div>
+        <div class="profile__header">
+          <p>Sarah Dole</p>
+          <p>Front End Engineer @ Microsoft</p>
+        </div>
+        <div class="profile__description">
+          I turn coffee into bugs which are fixed by someone else. Certified
+          Stack Overflow and ChatGPT developer.
+        </div>
+      </div>
+      <div class="contact_container" aria-describedby="contact-me">
+        <button
+          class="effect"
+          id="contact-me"
+          aria-pressed="false"
+          aria-label="Contact information"
+        >
+          Contact me
+        </button>
+        <ul class="socialicons_list">
+          <li class="socialicons_item"><i class="ri-github-fill ri-lg"></i></li>
+          <li class="socialicons_item">
+            <i class="ri-linkedin-box-fill ri-lg"></i>
+          </li>
+          <li class="socialicons_item">
+            <i class="ri-instagram-fill ri-lg"></i>
+          </li>
+          <li class="socialicons_item">
+            <i class="ri-twitter-x-fill ri-lg"></i>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
