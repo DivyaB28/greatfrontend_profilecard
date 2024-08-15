@@ -47,7 +47,7 @@ main {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   width: 340px;
   gap: 40px;
-  padding: 20px 10px;
+  padding: 20px 16px;
 }
 
 .profile {
@@ -66,7 +66,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 4px;
   align-items: center;
+  align-self: stretch;
 
   :nth-child(1) {
     font-size: 20px;
@@ -158,5 +160,35 @@ button {
     border-radius: 4px;
     box-shadow: 0 0 0 4px
       rgb(0.2666666805744171 0.2980392277240753 0.9058823585510254 / 0.12);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 24px 16px;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+  .socialicons_list {
+    li {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .profile__header {
+    :nth-child(2) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .profile__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
